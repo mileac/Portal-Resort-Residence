@@ -170,13 +170,12 @@ html
             document.getElementById('lot-number').textContent = lot.number;
             document.getElementById('lot-area').textContent = lot.area;
             document.getElementById('lot-dimensions').textContent = lot.dimensions;
-            document.getElementById('lot-location').textContent = lot.location;
-            
-            const highlight = document.getElementById('lot-highlight');
-            highlight.style.left = lot.coordinates.x;
-            highlight.style.top = lot.coordinates.y;
-            highlight.style.width = lot.coordinates.width;
-            highlight.style.height = lot.coordinates.height;
+            document.getElementById('lot-frente_para').textContent = lot.frente_para;
+            document.getElementById('lot-frente').textContent = lot.frente;
+            document.getElementById('lot-lateral_direita').textContent = lot.lateral_direita;
+            document.getElementById('lot-fundo').textContent = lot.fundo;
+            document.getElementById('lot-lateral_esquerda').textContent = lot.lateral_esquerda;
+        
         } else {
             alert('Lote não encontrado!');
         }
